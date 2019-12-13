@@ -5,10 +5,10 @@ pkgrel=1
 pkgdesc="Garry's Mod workshop utilities for arch (gmad and gmpublish)."
 arch=('x86_64')
 url="https://wiki.garrysmod.com/page/Workshop_Addon_Creation"
-depends=(
-  'steam'
-)
-provides=('gmod-workshop-utils-bin')
+depends=('steam')
+provides=('gmad')
+conflicts=('gmad')
+
 
 source=("gmad_linux"
         "gmpublish_linux"
